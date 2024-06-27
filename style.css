@@ -1,0 +1,226 @@
+/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+#home.hero {
+    background-image: url('https://m1.quebecormedia.com/emp/cl_prod/canadian_living-_-25aa04ca-2523-4b18-b5b5-5b3cbb84e34e-_-Knitting1415735618.jpg?impolicy=resize&width=1500&height=1500');
+    background-size: cover; /* Cover the entire container */
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff; /* Text color on top of the background image */
+    height: 100vh; /* Make the section take the full viewport height */
+}
+
+#home h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#home button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#home button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 3em; /* Adjust font size as needed */
+    background: none; /* Remove gradient background */
+    color: black; /* Set text color to black */
+}
+
+#about p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+}
+
+#projects h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Tips Section */
+#tips {
+    padding: 50px 20px;
+}
+
+#tips h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tips article {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tips article h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#tips article p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#contact form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #fff}
